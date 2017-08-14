@@ -9,7 +9,7 @@ h3 {color:#333;font-weight:bold}
 }
 .display-middle {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
 .center {display:inline-block;width:97%;text-align:center;}
-.content {max-width:980px;background-color:white;font-size:1.4em;margin:auto;}
+.content {max-width:980px;background-color:white;font-size:1.4em;margin:auto;padding:32px;}
 .logo {padding:12px 8px 12px 24px;color:#fff;background-color:#252730;font-size:2.4em;font-weight:bold;letter-spacing:16px;}
 .logo-sec {color:#fff;letter-spacing:2px;padding:0 0 0 14px;font-size:1.25em;}
 .normal {font-size:1em;}
