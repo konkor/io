@@ -20,13 +20,27 @@
 }
 </style>
 <body>
+<div class="top">
+  <div class="menu">
+    <a class="menu-item button hide-large right" href="javascript:void(0);" onclick="toggle()" title="Toggle Navigation Menu">...</a>
+    <a href="#home" class="menu-item button left">HOME</a>
+    <a href="#about" class="menu-item button hide-small left">ABOUT</a>
+    <a href="#projects" class="menu-item button hide-small left">PROJECTS</a>
+    <a href="#contact" class="menu-item button hide-small left">CONTACT</a>
+  </div>
+  <div id="navmenu" class="nmenu hide">
+    <a href="#about" class="button nmenu-item" onclick="toggle()">ABOUT</a>
+    <a href="#projects" class="nmenu-item button" onclick="toggle()">PROJECTS</a>
+    <a href="#contact" class="nmenu-item button" onclick="toggle()">CONTACT</a>
+  </div>
+</div>
  <div class="bg1" id="home">
   <div class="display-middle">
    <span class="logo">KONKOR</span><br>
    <span class="logo-sec">Open Source Developer</span>
   </div>
  </div>
- <div class="content">
+ <div class="content" id="about">
   <h3 class="center xlarge">ABOUT ME</h3>
   <p  class="center large"><em>I Believe In<br>The Open Source Development For People.</em></p>
   <p>I am an IT Engineer/Software Architect/Programmer with experience about 20 years. I am excited about Linux, open source software and community all that time. Now I'm looking for my place in the Open Source World. I have a few open source projects at <a href="https://github.com/konkor">GitHub</a> which needs a lot of time and efforts for growing, supporting and testing.</p>
@@ -171,7 +185,7 @@
  <!-- Contact Me -->
  <div class="content"  id="contact">
   <h3 class="center xlarge bold">CONTACT ME</h3>
-  <p>Hire me, make a tip for a cup of <svg height="18" width="24" version="1.1" viewBox="0 0 6.3499999 4.7625001" fill="#555"><g transform="translate(0 -292)"><path d="m5.53 294c0 0.319-0.259 0.577-0.577 0.577h-0.192v-1.15h0.192c0.319 0 0.577 0.259 0.577 0.577zm-5 2.31c0 0.424 0.346 0.77 0.77 0.77h3.85c0.424 0 0.77-0.346 0.77-0.77zm5.58-2c0-0.637-0.517-1.15-1.15-1.15h-3.47c-0.105 0-0.192 0.0872-0.192 0.192v2.21c0 0.37 0.304 0.673 0.673 0.673h2.12c0.37 0 0.673-0.304 0.673-0.673v-0.0962h0.192c0.637 0 1.15-0.517 1.15-1.15z"/></g></svg>, or leave me a note:</p>
+  <p>Hire me, <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WVAS5RXRMYVC4">make a tip for a cup of <svg height="18" width="24" version="1.1" viewBox="0 0 6.3499999 4.7625001" fill="#555"><g transform="translate(0 -292)"><path d="m5.53 294c0 0.319-0.259 0.577-0.577 0.577h-0.192v-1.15h0.192c0.319 0 0.577 0.259 0.577 0.577zm-5 2.31c0 0.424 0.346 0.77 0.77 0.77h3.85c0.424 0 0.77-0.346 0.77-0.77zm5.58-2c0-0.637-0.517-1.15-1.15-1.15h-3.47c-0.105 0-0.192 0.0872-0.192 0.192v2.21c0 0.37 0.304 0.673 0.673 0.673h2.12c0.37 0 0.673-0.304 0.673-0.673v-0.0962h0.192c0.637 0 1.15-0.517 1.15-1.15z"/></g></svg></a>, or leave me a note:</p>
    <form action="https://formspree.io/kapa76@gmail.com" method="POST" target="_blank">
     <div>
      <input class="col2" style="height:2em" type="text" placeholder="Name" required name="name">
@@ -203,6 +217,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+function toggle(){var x=document.getElementById("navmenu");if(x.className.indexOf("show")==-1){x.className += " show";}else{x.className=x.className.replace(" show", "");}}
 </script>
 </body>
 </html>
